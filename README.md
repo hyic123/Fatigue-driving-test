@@ -1,2 +1,17 @@
-# Fatigue-driving-test
-a digital-image-process project
+# 疲劳驾驶检测
+数字图像处理课程项目
+
+项目时间 2018年6月
+
+使用了dlib提供的人脸68点特征检测提取人脸特征，然后根据经验对68点的特征进行综合计算，使用svm区分收集的按帧划分的视频中人的状态，分为疲劳、哈欠和正常三种。
+
+
+目录结构
+img ----存放报告中所使用的图片原图
+draw.py ----绘制报告所需图像的程序
+get_landmark.py&record_landmark.py ----获取图片特征点并记录的程序
+get_feature.py ----从特征点提取相关特征的程序
+get_feature_label.py ----给提取的特征打好相应分类标记
+train.py ----训练SVM并测试精度
+report.pdf ----提交的论文
+
